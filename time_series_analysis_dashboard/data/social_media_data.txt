@@ -1,0 +1,7 @@
+
+file_path = "time_series_analysis_dashboard/data/social_media_data.txt"
+
+with open(file_path, "r") as f:
+    data = f.read()
+
+print(data)
