@@ -1,0 +1,5 @@
+python
+with open("time_series_analysis_dashboard/data/stock_market_data.txt", "r") as f:
+    content = f.read()
+    # Process the content as needed
+    print(content)
