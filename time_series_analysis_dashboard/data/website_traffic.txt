@@ -1,0 +1,18 @@
+python
+import os
+import datetime
+
+# Generate some sample website traffic data
+data = [
+    {"date": datetime.date(2022, 3, 1), "visits": 1000},
+    {"date": datetime.date(2022, 3, 2), "visits": 1500},
+    {"date": datetime.date(2022, 3, 3), "visits": 2000},
+    {"date": datetime.date(2022, 3, 4), "visits": 2500},
+    {"date": datetime.date(2022, 3, 5), "visits": 3000},
+]
+
+# Write data to file
+filename = os.path.join("time_series_analysis_dashboard", "data", "website_traffic.txt")
+with open(filename, "w") as f:
+    for entry in data:
+        f.write(f"{entry['date']}\t{entry['visits']}\n")
